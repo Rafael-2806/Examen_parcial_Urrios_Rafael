@@ -1,0 +1,128 @@
+/* Estilo Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f7fa;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Contenedor */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Encabezado */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Área de texto */
+  textarea {
+    width: 100%;
+    max-width: 600px;
+    min-height: 150px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    resize: vertical;
+    transition: box-shadow 0.3s;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 8px rgba(100, 100, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Botones */
+  button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Campo de Búsqueda */
+  input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(100, 100, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Sección de Botones */
+  p {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Vista del Resultado */
+  pre {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-top: 20px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    textarea {
+      width: 90%;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    pre {
+      width: 90%;
+    }
+  }
+  
